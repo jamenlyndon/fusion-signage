@@ -1,0 +1,55 @@
+/* [project]/app/components/tooltip/mui_tooltip.css [app-client] (css) */
+.MuiTooltip-tooltip.MuiTooltip-tooltipArrow {
+  padding: 12px;
+  background: #000000e6;
+}
+
+.MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow {
+  color: #000000e6;
+}
+
+.MuiTooltip-popper {
+  pointer-events: none !important;
+}
+
+.MuiTooltip-popper[data-popper-placement*="top"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow {
+  margin-bottom: 12px;
+}
+
+.MuiTooltip-popper[data-popper-placement*="bottom"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow {
+  margin-top: 12px;
+}
+
+.MuiTooltip-popper[data-popper-placement*="left"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow {
+  margin-right: 12px;
+}
+
+.MuiTooltip-popper[data-popper-placement*="right"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow {
+  margin-left: 12px;
+}
+
+.MuiTooltip-popper[data-popper-placement*="left-start"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow, .MuiTooltip-popper[data-popper-placement*="right-start"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow {
+  top: 6px !important;
+  bottom: auto !important;
+  transform: none !important;
+}
+
+.MuiTooltip-popper[data-popper-placement*="left-end"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow, .MuiTooltip-popper[data-popper-placement*="right-end"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow {
+  top: auto !important;
+  bottom: 6px !important;
+  transform: none !important;
+}
+
+.MuiTooltip-popper[data-popper-placement*="top-start"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow, .MuiTooltip-popper[data-popper-placement*="bottom-start"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow {
+  right: auto !important;
+  left: 6px !important;
+  transform: none !important;
+}
+
+.MuiTooltip-popper[data-popper-placement*="top-end"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow, .MuiTooltip-popper[data-popper-placement*="bottom-end"] .MuiTooltip-tooltip.MuiTooltip-tooltipArrow .MuiTooltip-arrow {
+  right: 6px !important;
+  left: auto !important;
+  transform: none !important;
+}
+
+/*# sourceMappingURL=app_components_tooltip_mui_tooltip_b52d8e.css.map*/

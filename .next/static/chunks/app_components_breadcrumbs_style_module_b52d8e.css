@@ -1,0 +1,69 @@
+/* [project]/app/components/breadcrumbs/style.module.css [app-client] (css) */
+.style-module__eqrpsa__component_breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-height: 16px;
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label {
+  color: #747474;
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a {
+  color: #747474;
+  text-decoration: none;
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a .style-module__eqrpsa__homeIcon svg {
+  color: #747474;
+  transition: color .1s linear;
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a .style-module__eqrpsa__divider svg {
+  color: #a3a3a3;
+}
+
+@media (hover: hover) {
+  .style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a:hover {
+    color: #3a3a3a;
+    text-decoration: underline;
+  }
+
+  .style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a:hover .style-module__eqrpsa__homeIcon svg {
+    color: #3a3a3a;
+  }
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a:active, .style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a:focus-visible {
+  color: #3a3a3a;
+  text-decoration: underline;
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a:active .style-module__eqrpsa__homeIcon svg, .style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__label a:focus-visible .style-module__eqrpsa__homeIcon svg {
+  color: #3a3a3a;
+}
+
+.style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb .style-module__eqrpsa__divider svg {
+  color: #a3a3a3;
+}
+
+@media (width <= 1024px) {
+  .style-module__eqrpsa__component_breadcrumbs {
+    gap: 8px;
+  }
+
+  .style-module__eqrpsa__component_breadcrumbs .style-module__eqrpsa__breadcrumb {
+    gap: 8px;
+    min-height: 14px;
+  }
+}
+
+/*# sourceMappingURL=app_components_breadcrumbs_style_module_b52d8e.css.map*/

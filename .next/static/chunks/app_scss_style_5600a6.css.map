@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/xampp/htdocs/fusion-signage/app/scss/style.css"],"sourcesContent":["@font-face{font-family:\"Nunito Sans\";font-weight:400 900;src:url(\"../fonts/NunitoSans.woff2\")}*{box-sizing:border-box;margin:0;padding:0}html,body{width:100%;min-width:320px;min-height:100%;scroll-behavior:smooth}\n"],"names":[],"mappings":"AAAA;;;;;;AAA8F;;;;;;AAA2C"}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

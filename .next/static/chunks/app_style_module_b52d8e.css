@@ -1,0 +1,12 @@
+/* [project]/app/style.module.css [app-client] (css) */
+.style-module__hlQ3RG__page_editPowerScheduleTimers .style-module__hlQ3RG__divider {
+  width: 100%;
+  height: 1px;
+  background: red;
+}
+
+.style-module__hlQ3RG__page_editPowerScheduleTimers .style-module__hlQ3RG__divider + .style-module__hlQ3RG__divider {
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=app_style_module_b52d8e.css.map*/

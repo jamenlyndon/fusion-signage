@@ -1,0 +1,53 @@
+/* [project]/app/components/pill/style.module.css [app-client] (css) */
+.style-module__OqQ9sG__component_pill {
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__type_primary {
+  background: #f99b27;
+  color: #181818;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__type_secondary {
+  background: #177f99;
+  color: #fff;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__type_info {
+  background: #3498db;
+  color: #fff;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__type_success {
+  background: #00a11a;
+  color: #fff;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__type_warning {
+  background: #f2c94c;
+  color: #181818;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__type_error {
+  background: #a10000;
+  color: #fff;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__size_l {
+  padding: 12px;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__size_m {
+  padding: 12px;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__size_s {
+  padding: 8px;
+}
+
+.style-module__OqQ9sG__component_pill.style-module__OqQ9sG__size_xs {
+  padding: 8px;
+}
+
+/*# sourceMappingURL=app_components_pill_style_module_b52d8e.css.map*/

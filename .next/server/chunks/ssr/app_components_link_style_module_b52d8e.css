@@ -1,0 +1,25 @@
+/* [project]/app/components/link/style.module.css [app-client] (css) */
+.style-module__Qe3c8W__component_link {
+  display: contents;
+}
+
+.style-module__Qe3c8W__component_link > .style-module__Qe3c8W__text {
+  display: inline-block;
+}
+
+.style-module__Qe3c8W__component_link > .style-module__Qe3c8W__link, .style-module__Qe3c8W__component_link > .style-module__Qe3c8W__text > .style-module__Qe3c8W__link {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+@media (hover: hover) {
+  .style-module__Qe3c8W__component_link > .style-module__Qe3c8W__link:hover, .style-module__Qe3c8W__component_link > .style-module__Qe3c8W__text > .style-module__Qe3c8W__link:hover {
+    text-decoration: none;
+  }
+}
+
+.style-module__Qe3c8W__component_link > .style-module__Qe3c8W__link:active, .style-module__Qe3c8W__component_link > .style-module__Qe3c8W__link:focus-visible, .style-module__Qe3c8W__component_link > .style-module__Qe3c8W__text > .style-module__Qe3c8W__link:active, .style-module__Qe3c8W__component_link > .style-module__Qe3c8W__text > .style-module__Qe3c8W__link:focus-visible {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=app_components_link_style_module_b52d8e.css.map*/

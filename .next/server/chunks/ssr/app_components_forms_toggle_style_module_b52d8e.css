@@ -1,0 +1,94 @@
+/* [project]/app/components/forms/toggle/style.module.css [app-client] (css) */
+.style-module__2oPkpG__component_toggle {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+  min-width: 100%;
+}
+
+.style-module__2oPkpG__component_toggle input {
+  all: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 56px;
+  height: 28px;
+  background: #7c879c;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.style-module__2oPkpG__component_toggle input:focus-visible {
+  outline: 3px solid #c2d5fb !important;
+}
+
+.style-module__2oPkpG__component_toggle input:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: #fff;
+  border-radius: 9999px;
+  box-shadow: 1px 1px 2px #0000001a;
+  transition: left .2s;
+}
+
+.style-module__2oPkpG__component_toggle input:checked {
+  background: #5dc9c9;
+}
+
+.style-module__2oPkpG__component_toggle input:checked:before {
+  left: calc(100% - 25px);
+}
+
+.style-module__2oPkpG__component_toggle .style-module__2oPkpG__textContainer {
+  padding-top: 8px;
+}
+
+.style-module__2oPkpG__component_toggle .style-module__2oPkpG__textContainer label {
+  color: #373d48;
+  cursor: pointer;
+}
+
+.style-module__2oPkpG__component_toggle.style-module__2oPkpG__error input {
+  background: #99010080;
+}
+
+.style-module__2oPkpG__component_toggle.style-module__2oPkpG__error input:checked {
+  background: #990100;
+}
+
+.style-module__2oPkpG__component_toggle.style-module__2oPkpG__error .style-module__2oPkpG__textContainer label {
+  color: #990100;
+}
+
+@media (width <= 1024px) {
+  .style-module__2oPkpG__component_toggle input {
+    width: 40px;
+    height: 20px;
+  }
+
+  .style-module__2oPkpG__component_toggle input:before {
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .style-module__2oPkpG__component_toggle input:checked:before {
+    left: calc(100% - 17px);
+  }
+
+  .style-module__2oPkpG__component_toggle .style-module__2oPkpG__textContainer {
+    padding-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=app_components_forms_toggle_style_module_b52d8e.css.map*/

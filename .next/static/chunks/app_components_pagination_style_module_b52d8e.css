@@ -1,0 +1,117 @@
+/* [project]/app/components/pagination/style.module.css [app-client] (css) */
+.style-module__jX6bgG__component_pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__button {
+  all: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  min-height: 32px;
+  background: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 9999px;
+  color: #181818;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__button .style-module__jX6bgG__totalPages {
+  display: none;
+}
+
+@media (hover: hover) {
+  .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__button:hover {
+    border-color: #a3a3a3;
+  }
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__button:active, .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__button:focus-visible {
+  border-color: #a3a3a3;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__pageButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__pageButtons .style-module__jX6bgG__pageButton[data-current-page="true"] {
+  background: #177f99;
+  color: #fff;
+  border-color: #177f99 !important;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__pageButtons .style-module__jX6bgG__ellipsisButton {
+  border-color: #e7e7e7;
+  color: #747474;
+  pointer-events: none;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__prevButton svg, .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__nextButton svg {
+  color: #181818;
+  transition: color .2s;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__prevButton[data-enabled="false"], .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__nextButton[data-enabled="false"] {
+  border-color: #e7e7e7;
+  pointer-events: none;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__prevButton[data-enabled="false"] svg, .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__nextButton[data-enabled="false"] svg {
+  color: #d1d1d1;
+}
+
+.style-module__jX6bgG__component_pagination .style-module__jX6bgG__resultsText {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #747474;
+}
+
+@media (width <= 1024px) {
+  .style-module__jX6bgG__component_pagination {
+    gap: 16px;
+  }
+
+  .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons {
+    gap: 16px;
+  }
+
+  .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__button {
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+    min-height: 28px;
+  }
+}
+
+@media (width <= 540px) {
+  .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__pageButton[data-current-page="false"], .style-module__jX6bgG__component_pagination .style-module__jX6bgG__buttons .style-module__jX6bgG__ellipsisButton {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=app_components_pagination_style_module_b52d8e.css.map*/

@@ -1,0 +1,29 @@
+/* [project]/app/components/scrollbar/style.module.css [app-client] (css) */
+.style-module__-75tiq__component_scrollbar {
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.style-module__-75tiq__component_scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.style-module__-75tiq__component_scrollbar::-webkit-scrollbar-track {
+  background: #e7e7e7;
+  border-radius: 9999px;
+}
+
+.style-module__-75tiq__component_scrollbar::-webkit-scrollbar-thumb {
+  background-color: #747474;
+  border: 2px solid #e7e7e7;
+  border-radius: 9999px;
+  transition: background .2s linear;
+}
+
+.style-module__-75tiq__component_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #5d5d5d;
+}
+
+/*# sourceMappingURL=app_components_scrollbar_style_module_b52d8e.css.map*/

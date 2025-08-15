@@ -1,0 +1,105 @@
+/* [project]/app/components/forms/checkbox/style.module.css [app-client] (css) */
+.style-module__Ao0wcG__component_checkbox {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+  min-width: 100%;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer {
+  position: relative;
+  width: 28px;
+  height: 28px;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer input {
+  all: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #7c879c;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color .1s, border-color .1s;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer input:focus-visible {
+  outline: 3px solid #c2d5fb !important;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer .style-module__Ao0wcG__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  font-size: 0;
+  pointer-events: none;
+  transition: opacity .1s;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer .style-module__Ao0wcG__icon svg {
+  width: 17px;
+  height: 12px;
+  color: #c2d5fb;
+  transition: color .1s;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__textContainer {
+  padding-top: 8px;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__textContainer label {
+  color: #373d48;
+  cursor: pointer;
+}
+
+.style-module__Ao0wcG__component_checkbox.style-module__Ao0wcG__error .style-module__Ao0wcG__checkboxContainer input {
+  border-color: #990100;
+}
+
+.style-module__Ao0wcG__component_checkbox.style-module__Ao0wcG__error .style-module__Ao0wcG__checkboxContainer[data-selected="true"] input {
+  background: #990100;
+}
+
+.style-module__Ao0wcG__component_checkbox.style-module__Ao0wcG__error .style-module__Ao0wcG__textContainer label {
+  color: #990100;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer[data-selected="true"] input {
+  background: #5dc9c9;
+  border-color: #5dc9c9;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer[data-selected="true"] .style-module__Ao0wcG__icon {
+  opacity: 1;
+}
+
+.style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer[data-selected="true"] .style-module__Ao0wcG__icon svg {
+  color: #fff;
+}
+
+@media (width <= 1024px) {
+  .style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer {
+    width: 20px;
+    height: 20px;
+  }
+
+  .style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__checkboxContainer .style-module__Ao0wcG__icon svg {
+    width: 14px;
+    height: 10px;
+  }
+
+  .style-module__Ao0wcG__component_checkbox .style-module__Ao0wcG__textContainer {
+    padding-top: 5px;
+  }
+}
+
+/*# sourceMappingURL=app_components_forms_checkbox_style_module_b52d8e.css.map*/

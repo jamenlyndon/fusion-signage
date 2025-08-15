@@ -1,0 +1,187 @@
+/* [project]/app/components/expandCollapseButton/style.module.css [app-client] (css) */
+button.style-module__1TabEG__component_expandCollapseButton {
+  all: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  width: 0;
+  font-weight: 700;
+  color: #3498db;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  button.style-module__1TabEG__component_expandCollapseButton:hover {
+    text-decoration: underline;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton:active, button.style-module__1TabEG__component_expandCollapseButton:focus-visible {
+  text-decoration: underline;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton .style-module__1TabEG__arrow {
+  display: flex;
+  align-content: flex-start;
+  color: #3498db;
+  transition: transform .2s linear;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton .style-module__1TabEG__arrow svg {
+  width: auto;
+  height: 100%;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__expanded .style-module__1TabEG__arrow {
+  transform: rotate(180deg);
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h1 {
+  gap: 16px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h1 .style-module__1TabEG__arrow {
+  height: 19px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h1 {
+    gap: 12px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h1 .style-module__1TabEG__arrow {
+    height: 15px;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h2 {
+  gap: 12px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h2 .style-module__1TabEG__arrow {
+  height: 15px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h2 {
+    gap: 12px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h2 .style-module__1TabEG__arrow {
+    height: 13px;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h3 {
+  gap: 12px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h3 .style-module__1TabEG__arrow {
+  height: 13px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h3 {
+    gap: 10px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h3 .style-module__1TabEG__arrow {
+    height: 11px;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h4 {
+  gap: 10px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h4 .style-module__1TabEG__arrow {
+  height: 11px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h4 {
+    gap: 10px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_h4 .style-module__1TabEG__arrow {
+    height: 11px;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_l {
+  gap: 10px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_l .style-module__1TabEG__arrow {
+  height: 11px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_l {
+    gap: 8px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_l .style-module__1TabEG__arrow {
+    height: 9px;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_m {
+  gap: 8px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_m .style-module__1TabEG__arrow {
+  height: 9px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_m {
+    gap: 6px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_m .style-module__1TabEG__arrow {
+    height: 8px;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_s {
+  gap: 6px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_s .style-module__1TabEG__arrow {
+  height: 8px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_s {
+    gap: 6px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_s .style-module__1TabEG__arrow {
+    height: 7px;
+  }
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_xs {
+  gap: 6px;
+}
+
+button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_xs .style-module__1TabEG__arrow {
+  height: 7px;
+}
+
+@media (width <= 1024px) {
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_xs {
+    gap: 4px;
+  }
+
+  button.style-module__1TabEG__component_expandCollapseButton.style-module__1TabEG__size_xs .style-module__1TabEG__arrow {
+    height: 6px;
+  }
+}
+
+/*# sourceMappingURL=app_components_expandCollapseButton_style_module_b52d8e.css.map*/

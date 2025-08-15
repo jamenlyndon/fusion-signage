@@ -1,0 +1,14 @@
+image: node:22.11.0
+
+pipelines:
+  pull-requests:
+    '**':
+      - parallel:
+          - step:
+              name: Test and lint
+              caches:
+                - node
+              script:
+                - npm install
+                - npm run lint
+                - npm run test

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/xampp/htdocs/next-template/app/test/layout.tsx"],"sourcesContent":["/* Setup the meta data\r\n---------------------------------------------------------------------------------------------------- */\r\nimport type { Metadata } from \"next\";\r\nexport const metadata: Metadata = {\r\n\ttitle: \"Test Page\",\r\n\tdescription: \"\"\r\n};\r\n\r\n\r\n\r\n/* Create the entry point for this page\r\n---------------------------------------------------------------------------------------------------- */\r\ntype typedProps = {\r\n\tchildren?: React.ReactNode\r\n};\r\n\r\nexport default function Layout({\r\n\tchildren\r\n}: typedProps) {\r\n\treturn children;\r\n}\r\n"],"names":[],"mappings":"AAAA;qGACqG;;;;AAE9F,MAAM,WAAqB;IACjC,OAAO;IACP,aAAa;AACd;AAUe,SAAS,OAAO,EAC9B,QAAQ,EACI;IACZ,OAAO;AACR"}},
+    {"offset": {"line": 19, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

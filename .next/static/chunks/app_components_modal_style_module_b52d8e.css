@@ -1,0 +1,110 @@
+/* [project]/app/components/modal/style.module.css [app-client] (css) */
+.style-module__cED_-a__component_modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+
+.style-module__cED_-a__component_modal a, .style-module__cED_-a__component_modal button {
+  pointer-events: none;
+}
+
+.style-module__cED_-a__component_modal[data-open="true"] {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.style-module__cED_-a__component_modal[data-open="true"] a, .style-module__cED_-a__component_modal[data-open="true"] button {
+  pointer-events: all;
+}
+
+.style-module__cED_-a__component_modal .style-module__cED_-a__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000c;
+  positon: fixed;
+}
+
+.style-module__cED_-a__component_modal .style-module__cED_-a__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 48px);
+  max-width: 768px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2.77px 2.21px #00000012, 0 6.65px 5.32px #0000000d, 0 11.52px 10.02px #0000000b, 0 22.34px 17.87px #00000009, 0 41.78px 33.42px #00000007, 0 100px 80px #00000005;
+}
+
+.style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: -8px;
+}
+
+@media (width <= 1024px) {
+  .style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__buttons {
+    flex-direction: column-reverse;
+  }
+}
+
+.style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__closeButton {
+  all: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__closeButton svg {
+  color: #747474;
+  transition: color .2s;
+}
+
+@media (hover: hover) {
+  .style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__closeButton:hover svg {
+    color: #3a3a3a;
+  }
+}
+
+.style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__closeButton:active svg, .style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__closeButton:focus-visible svg {
+  color: #3a3a3a;
+}
+
+@media (width <= 1024px) {
+  .style-module__cED_-a__component_modal .style-module__cED_-a__modal {
+    width: calc(100% - 32px);
+    padding: 32px;
+  }
+}
+
+@media (width <= 400px) {
+  .style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__buttons {
+    gap: 8px;
+  }
+
+  .style-module__cED_-a__component_modal .style-module__cED_-a__modal .style-module__cED_-a__buttons a {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=app_components_modal_style_module_b52d8e.css.map*/

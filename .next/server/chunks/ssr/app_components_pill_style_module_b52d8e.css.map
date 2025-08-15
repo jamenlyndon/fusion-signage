@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/components/pill/style.module.css"],"sourcesContent":[".component_pill{display:inline-block;border-radius:8px}.component_pill.type_primary{background:#f99b27;color:#181818}.component_pill.type_secondary{background:#177f99;color:#fff}.component_pill.type_info{background:#3498db;color:#fff}.component_pill.type_success{background:#00a11a;color:#fff}.component_pill.type_warning{background:#f2c94c;color:#181818}.component_pill.type_error{background:#a10000;color:#fff}.component_pill.size_l{padding:12px}.component_pill.size_m{padding:12px}.component_pill.size_s{padding:8px}.component_pill.size_xs{padding:8px}\n"],"names":[],"mappings":"AAAA;;;;;AAAuD;;;;;AAA8D;;;;;AAA6D;;;;;AAAwD;;;;;AAA2D;;;;;AAA8D;;;;;AAAyD;;;;AAAoC;;;;AAAoC;;;;AAAmC"}},
+    {"offset": {"line": 51, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

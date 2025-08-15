@@ -1,0 +1,110 @@
+/* [project]/app/components/charts/chartWrapper/style.module.css [app-client] (css) */
+.style-module__rqttDG__component_chartWrapper {
+  overflow: hidden;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__options {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+@media (width <= 1024px) {
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__options {
+    margin-bottom: 32px;
+  }
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__options .style-module__rqttDG__selectChartType {
+  width: 100%;
+  max-width: 485px;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards {
+  display: flex;
+  gap: 48px;
+}
+
+@media (width <= 1024px) {
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards {
+    gap: 32px;
+  }
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__chart {
+  flex-basis: 100%;
+  width: 100%;
+  min-width: 790px;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer {
+  display: flex;
+  gap: 24px;
+  padding-top: 6px;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup {
+  width: 240px;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup.style-module__rqttDG__singleGroup {
+  width: 336px;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup .style-module__rqttDG__cardGroupTitle {
+  margin-bottom: 16px;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup .style-module__rqttDG__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup .style-module__rqttDG__cards .style-module__rqttDG__card {
+  width: 100%;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity .2s;
+}
+
+.style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup .style-module__rqttDG__cards .style-module__rqttDG__card[data-enabled="false"] {
+  opacity: .5;
+}
+
+@media (width <= 1432px) {
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards {
+    flex-wrap: wrap;
+  }
+
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__chart {
+    min-width: 100%;
+  }
+
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup {
+    flex-basis: 100%;
+  }
+
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup .style-module__rqttDG__cards .style-module__rqttDG__card {
+    flex-basis: calc(33.33% - 10.6667px);
+  }
+}
+
+@media (width <= 768px) {
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup .style-module__rqttDG__cards .style-module__rqttDG__card {
+    flex-basis: calc(50% - 8px);
+  }
+}
+
+@media (width <= 640px) {
+  .style-module__rqttDG__component_chartWrapper .style-module__rqttDG__chartAndCards .style-module__rqttDG__cardsContainer .style-module__rqttDG__cardGroup .style-module__rqttDG__cards .style-module__rqttDG__card {
+    flex-basis: 100%;
+    min-width: 0;
+  }
+}
+
+/*# sourceMappingURL=app_components_charts_chartWrapper_style_module_b52d8e.css.map*/

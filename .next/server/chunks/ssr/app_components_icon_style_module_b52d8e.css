@@ -1,0 +1,129 @@
+/* [project]/app/components/icon/style.module.css [app-client] (css) */
+.style-module__inT3VW__component_icon {
+  display: block;
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__color_primary svg {
+  color: #f99b27;
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__color_secondary svg {
+  color: #177f99;
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__color_grey svg {
+  color: #181818;
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__color_lightGrey svg {
+  color: #747474;
+}
+
+.style-module__inT3VW__component_icon:not(.style-module__inT3VW__responsive).style-module__inT3VW__size_xl {
+  width: 64px;
+  height: 64px;
+}
+
+.style-module__inT3VW__component_icon:not(.style-module__inT3VW__responsive).style-module__inT3VW__size_l {
+  width: 48px;
+  height: 48px;
+}
+
+.style-module__inT3VW__component_icon:not(.style-module__inT3VW__responsive).style-module__inT3VW__size_m {
+  width: 32px;
+  height: 32px;
+}
+
+.style-module__inT3VW__component_icon:not(.style-module__inT3VW__responsive).style-module__inT3VW__size_s {
+  width: 24px;
+  height: 24px;
+}
+
+.style-module__inT3VW__component_icon:not(.style-module__inT3VW__responsive).style-module__inT3VW__size_xs {
+  width: 18px;
+  height: 18px;
+}
+
+.style-module__inT3VW__component_icon:not(.style-module__inT3VW__responsive).style-module__inT3VW__size_xxs {
+  width: 16px;
+  height: 16px;
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_xl {
+  width: 64px;
+  height: 64px;
+}
+
+@media (width <= 1024px) {
+  .style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_xl {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_l {
+  width: 48px;
+  height: 48px;
+}
+
+@media (width <= 1024px) {
+  .style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_l {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_m {
+  width: 32px;
+  height: 32px;
+}
+
+@media (width <= 1024px) {
+  .style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_m {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_s {
+  width: 24px;
+  height: 24px;
+}
+
+@media (width <= 1024px) {
+  .style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_s {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_xs {
+  width: 18px;
+  height: 18px;
+}
+
+@media (width <= 1024px) {
+  .style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_xs {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_xxs {
+  width: 16px;
+  height: 16px;
+}
+
+@media (width <= 1024px) {
+  .style-module__inT3VW__component_icon.style-module__inT3VW__responsive.style-module__inT3VW__size_xxs {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.style-module__inT3VW__component_icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=app_components_icon_style_module_b52d8e.css.map*/

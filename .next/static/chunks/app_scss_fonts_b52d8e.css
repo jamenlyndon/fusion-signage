@@ -1,0 +1,41 @@
+/* [project]/app/scss/fonts.css [app-client] (css) */
+@font-face {
+  font-family: Open Sans;
+  font-weight: 300;
+  src: url("../media/OpenSans-Light.3292c34c.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-style: italic;
+  src: url("../media/OpenSans-LightItalic.b1de2006.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 400;
+  src: url("../media/OpenSans-Regular.b94da2ef.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-style: italic;
+  src: url("../media/OpenSans-RegularItalic.d65b1a8a.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 700;
+  src: url("../media/OpenSans-Bold.fbbda1da.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-style: italic;
+  src: url("../media/OpenSans-BoldItalic.1667b099.woff2");
+}
+
+/*# sourceMappingURL=app_scss_fonts_b52d8e.css.map*/

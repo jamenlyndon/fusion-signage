@@ -1,0 +1,21 @@
+/* [project]/app/scss/style.css [app-client] (css) */
+@font-face {
+  font-family: Nunito Sans;
+  font-weight: 400 900;
+  src: url("/_next/static/media/NunitoSans.7b6f2d3f.woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=app_scss_style_b52d8e.css.map*/

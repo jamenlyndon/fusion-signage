@@ -1,0 +1,445 @@
+/* [project]/app/components/table/style.module.css [app-client] (css) */
+.style-module__bH12ya__component_table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table {
+    gap: 20px;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__top {
+  display: flex;
+  gap: 32px;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__top .style-module__bH12ya__title {
+  font-weight: 700;
+  padding-bottom: 2px !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__top .style-module__bH12ya__toggle {
+  margin-left: auto;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__top .style-module__bH12ya__toggle > div {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+@media (width <= 540px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__top {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .style-module__bH12ya__component_table .style-module__bH12ya__top .style-module__bH12ya__title {
+    width: 100%;
+  }
+
+  .style-module__bH12ya__component_table .style-module__bH12ya__top .style-module__bH12ya__toggle {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView {
+    gap: 20px;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table {
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  color: #181818;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar {
+  max-height: 458px;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar {
+    max-height: 449px;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table {
+  border-collapse: collapse;
+  min-width: 100%;
+  border: 0;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead {
+  position: relative;
+  z-index: 1;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr {
+  position: relative;
+  z-index: 1;
+  background: #e1f0fa;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  background: #e1f0fa;
+  text-align: left;
+  white-space: nowrap;
+  vertical-align: bottom;
+  cursor: pointer;
+  transition: background-color .1s linear;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th > div:not(.style-module__bH12ya__icon) {
+  padding-right: 16px;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th .style-module__bH12ya__icon {
+  position: absolute;
+  right: 8px;
+  bottom: 20px;
+  transform: rotate(0);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .1s linear, transform .1s linear;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th .style-module__bH12ya__icon svg {
+  color: #747474;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th[data-sort="asc"] {
+  background: #c2e0f4;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th[data-sort="desc"] .style-module__bH12ya__icon, .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th[data-sort="asc"] .style-module__bH12ya__icon {
+  opacity: 1 !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th[data-sort="asc"] .style-module__bH12ya__icon {
+  transform: rotate(-180deg);
+}
+
+@media (hover: hover) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:hover {
+    background: #cce5f6;
+  }
+
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:hover .style-module__bH12ya__icon {
+    opacity: .6;
+  }
+
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:hover[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:hover[data-sort="asc"] {
+    background: #b8dbf2;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:active, .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:focus-visible {
+  background: #cce5f6;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:active .style-module__bH12ya__icon, .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:focus-visible .style-module__bH12ya__icon {
+  opacity: .6;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:active[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:active[data-sort="asc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:focus-visible[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table thead tr th:focus-visible[data-sort="asc"] {
+  background: #b8dbf2;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr td {
+  padding-top: 20px;
+  padding-right: 16px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  vertical-align: top;
+  transition: background-color .2s linear;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr td.style-module__bH12ya__missingData {
+  color: #a10000;
+  white-space: nowrap;
+  background: #eccccc !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr td .style-module__bH12ya__pillContainer {
+  overflow: visible;
+  height: 10px;
+  max-height: 10px;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr td .style-module__bH12ya__pillContainer .style-module__bH12ya__pill {
+  position: relative;
+  top: -8px;
+  white-space: nowrap;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr td .style-module__bH12ya__pillContainer {
+    height: 9px;
+    max-height: 9px;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr td.style-module__bH12ya__divider {
+  width: 1px;
+  min-width: 1px;
+  padding: 0 !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:nth-child(odd) td {
+  background: #fff;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:nth-child(odd) td[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:nth-child(odd) td[data-sort="asc"] {
+  background: #f3f3f3;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:nth-child(2n) td {
+  background: #f3f3f3;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:nth-child(2n) td[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:nth-child(2n) td[data-sort="asc"] {
+  background: #e7e7e7;
+}
+
+@media (hover: hover) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:hover td {
+    background-color: #0000001f;
+  }
+
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:hover td[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:hover td[data-sort="asc"] {
+    background-color: #00000026;
+  }
+
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:hover td.style-module__bH12ya__divider {
+    background-color: #c5c5c5;
+  }
+
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:hover td.style-module__bH12ya__missingData {
+    background: #e7bfbf !important;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:active td, .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:focus-visible td {
+  background-color: #0000001f;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:active td[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:active td[data-sort="asc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:focus-visible td[data-sort="desc"], .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:focus-visible td[data-sort="asc"] {
+  background-color: #00000026;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:active td.style-module__bH12ya__divider, .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:focus-visible td.style-module__bH12ya__divider {
+  background-color: #c5c5c5;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:active td.style-module__bH12ya__missingData, .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table .style-module__bH12ya__scrollbar table tbody tr:focus-visible td.style-module__bH12ya__missingData {
+  background: #e7bfbf !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer .style-module__bH12ya__scrollbar {
+  max-height: 492px;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer .style-module__bH12ya__scrollbar {
+    max-height: 483px;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer table thead tr:not(.style-module__bH12ya__headerGroups) th {
+  top: 34px;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer table thead tr.style-module__bH12ya__headerGroups {
+  position: sticky;
+  z-index: 2;
+  height: 34px;
+  background: #aed6f1;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer table thead tr.style-module__bH12ya__headerGroups th {
+  position: sticky;
+  z-index: 2;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: #aed6f1;
+  text-align: center;
+  vertical-align: bottom;
+  cursor: auto;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer table thead tr.style-module__bH12ya__headerGroups th:first-child {
+  border-left: none;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer table thead tr.style-module__bH12ya__headerGroups th:last-child {
+  border-right: none;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer table thead tr th.style-module__bH12ya__divider {
+  width: 1px;
+  min-width: 1px;
+  background: #90c6eb;
+  padding: 0 !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__table.style-module__bH12ya__headerGroupsContainer table tbody tr td.style-module__bH12ya__divider {
+  width: 1px;
+  background: #d1d1d1;
+  padding: 0 !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__tableView .style-module__bH12ya__resultsText {
+  width: 100%;
+  color: #747474;
+  text-align: right;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__listView {
+    gap: 20px;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__sortBy {
+  width: 100%;
+  max-width: 473px;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__sortBy {
+    max-width: 100%;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  width: 100%;
+  padding: 32px;
+  border: 1px solid #d1d1d1;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: box-shadow .2s;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard {
+    gap: 32px;
+    padding: 24px;
+  }
+}
+
+@media (hover: hover) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard:hover {
+    box-shadow: 0 4px 4px #00000009;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard:active, .style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard:focus-visible {
+  box-shadow: 0 4px 4px #00000009;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__expandCollapseButton {
+  width: auto;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+@media (width <= 1024px) {
+  .style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups {
+    gap: 48px;
+  }
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__colTitle {
+  flex-wrap: nowrap;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d1d1d1;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__cells {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__cells .style-module__bH12ya__cell {
+  max-width: 256px;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__cells .style-module__bH12ya__cell.style-module__bH12ya__missingData {
+  color: #a10000;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__cells .style-module__bH12ya__cell.style-module__bH12ya__missingData .style-module__bH12ya__value {
+  white-space: nowrap;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__cells .style-module__bH12ya__cell .style-module__bH12ya__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__cells .style-module__bH12ya__cell .style-module__bH12ya__value .style-module__bH12ya__pill {
+  white-space: nowrap;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard[data-overflowing="false"] .style-module__bH12ya__expandCollapseButton {
+  display: none;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard[data-expanded="true"] .style-module__bH12ya__groups {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.style-module__bH12ya__component_table .style-module__bH12ya__listView .style-module__bH12ya__listCard[data-double-headers="true"] .style-module__bH12ya__groups .style-module__bH12ya__group .style-module__bH12ya__cells {
+  flex-wrap: nowrap;
+}
+
+/*# sourceMappingURL=app_components_table_style_module_b52d8e.css.map*/

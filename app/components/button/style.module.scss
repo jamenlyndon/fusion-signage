@@ -1,0 +1,82 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../scss/partials/variables' as v;
+@use '../../scss/partials/mixins' as m;
+
+
+
+/* Button Component
+---------------------------------------------------------------------------------------------------- */
+.component_button {
+	@include m.reset;
+	position: relative;
+	display: inline-block;
+	min-width: (v.$gap_1 * 56);
+	padding-top: v.$gap_2_5;
+	padding-right: v.$gap_4;
+	padding-bottom: v.$gap_2_5;
+	padding-left: v.$gap_4;
+	background: v.$color_grey_dark_1;
+	border-radius: v.$border_radius_xs;
+	color: v.$color_white;
+	text-align: center;
+	cursor: pointer;
+	transition: background v.$transition_fast linear;
+
+	// Loading spinner
+	.spinner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: none;
+		width: v.$gap_3;
+		height: v.$gap_3;
+		border: 3px solid v.$color_white;
+		border-bottom-color: transparent;
+		border-radius: 50%;
+		animation: rotation 1s linear infinite;
+	}
+
+	@keyframes rotation {
+		0% {
+			transform: translate(-50%, -50%) rotate(0deg);
+		}
+
+		100% {
+			transform: translate(-50%, -50%) rotate(360deg);
+		}
+	}
+
+	// Text
+	.text {
+		display: inline-block;
+	}
+
+	// Hover state
+	@include m.hover {
+		background: v.$color_grey_dark_2;
+	}
+
+	// Loading state
+	&.loading {
+		background: v.$color_grey_light_1;
+		pointer-events: none;
+
+		.spinner {
+			display: inline-block;
+		}
+
+		.text {
+			visibility: hidden;
+		}
+	}
+
+	// Responsive
+	@media (max-width: v.$breakpoint_l) {
+		min-width: (v.$gap_1 * 42);
+		padding-top: v.$gap_1_5;
+		padding-right: v.$gap_2;
+		padding-bottom: v.$gap_1_5;
+		padding-left: v.$gap_2;
+	}
+}

@@ -1,0 +1,82 @@
+/* [project]/app/components/button/style.module.css [app-client] (css) */
+.style-module__n8fvSW__component_button {
+  all: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  min-width: 448px;
+  padding-top: 20px;
+  padding-right: 32px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  background: #373d48;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: background .1s linear;
+}
+
+.style-module__n8fvSW__component_button .style-module__n8fvSW__spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #fff;
+  border-bottom-color: #0000;
+  border-radius: 50%;
+  animation: 1s linear infinite style-module__n8fvSW__rotation;
+}
+
+@keyframes style-module__n8fvSW__rotation {
+  0% {
+    transform: translate(-50%, -50%)rotate(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%)rotate(360deg);
+  }
+}
+
+.style-module__n8fvSW__component_button .style-module__n8fvSW__text {
+  display: inline-block;
+}
+
+@media (hover: hover) {
+  .style-module__n8fvSW__component_button:hover {
+    background: #222;
+  }
+}
+
+.style-module__n8fvSW__component_button:active, .style-module__n8fvSW__component_button:focus-visible {
+  background: #222;
+}
+
+.style-module__n8fvSW__component_button.style-module__n8fvSW__loading {
+  background: #7c879c;
+  pointer-events: none;
+}
+
+.style-module__n8fvSW__component_button.style-module__n8fvSW__loading .style-module__n8fvSW__spinner {
+  display: inline-block;
+}
+
+.style-module__n8fvSW__component_button.style-module__n8fvSW__loading .style-module__n8fvSW__text {
+  visibility: hidden;
+}
+
+@media (width <= 1024px) {
+  .style-module__n8fvSW__component_button {
+    min-width: 336px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+  }
+}
+
+/*# sourceMappingURL=app_components_button_style_module_b52d8e.css.map*/

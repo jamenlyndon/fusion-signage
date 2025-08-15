@@ -1,0 +1,43 @@
+/* [project]/app/components/typography/h1/style.module.css [app-client] (css) */
+.style-module__D3MrTG__component_h1 {
+  display: block;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 45px;
+}
+
+.style-module__D3MrTG__component_h1:before {
+  content: "";
+  display: table;
+}
+
+.style-module__D3MrTG__component_h1:after {
+  content: "";
+  display: table;
+}
+
+.style-module__D3MrTG__component_h1:before {
+  margin-bottom: -11px;
+}
+
+.style-module__D3MrTG__component_h1:after {
+  margin-top: -13px;
+}
+
+@media (width <= 1024px) {
+  .style-module__D3MrTG__component_h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .style-module__D3MrTG__component_h1:before {
+    margin-bottom: -10px;
+  }
+
+  .style-module__D3MrTG__component_h1:after {
+    margin-top: -11px;
+  }
+}
+
+/*# sourceMappingURL=app_components_typography_h1_style_module_b52d8e.css.map*/

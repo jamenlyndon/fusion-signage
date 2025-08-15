@@ -1,0 +1,99 @@
+/* [project]/app/components/forms/datePicker/mui_datePicker.css [app-client] (css) */
+.MuiPickersLayout-root .MuiPickersLayout-toolbar {
+  padding-bottom: 0 !important;
+}
+
+.MuiPickersLayout-root .MuiPickersLayout-toolbar h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.MuiBackdrop-root {
+  background: #0009 !important;
+}
+
+.MuiButton-textPrimary {
+  color: #177f99;
+}
+
+.MuiPaper-elevation {
+  border: 1px solid #d1d1d1 !important;
+  box-shadow: 0 4px 4px #00000009 !important;
+}
+
+.MuiTouchRipple-root {
+  display: none !important;
+}
+
+.MuiDateCalendar-root * {
+  font-family: Open Sans, sans-serif;
+  color: #181818;
+}
+
+.MuiDateCalendar-root .MuiPickersCalendarHeader-label {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.MuiDateCalendar-root .MuiDayCalendar-weekDayLabel {
+  color: #747474;
+}
+
+.MuiDateCalendar-root .MuiPickersDay-dayOutsideMonth {
+  color: #b9b9b9;
+}
+
+.MuiDateCalendar-root .MuiPickersDay-root, .MuiDateCalendar-root .MuiDayCalendar-weekDayLabel, .MuiDateCalendar-root .MuiPickersYear-yearButton {
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.MuiDateCalendar-root .MuiPickersDay-today {
+  background: #fff;
+  font-weight: 700;
+  color: #177f99;
+  border: 0 !important;
+}
+
+.MuiDateCalendar-root svg, .MuiDateCalendar-root svg * {
+  color: #747474;
+}
+
+.MuiDateCalendar-root button {
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+
+.MuiDateCalendar-root button .MuiTouchRipple-root {
+  display: none !important;
+}
+
+@media (hover: hover) {
+  .MuiDateCalendar-root button:hover {
+    background: #e7e7e7;
+  }
+
+  .MuiDateCalendar-root button:hover svg, .MuiDateCalendar-root button:hover svg * {
+    color: #3a3a3a;
+  }
+}
+
+.MuiDateCalendar-root button:active, .MuiDateCalendar-root button:focus-visible {
+  background: #e7e7e7;
+}
+
+.MuiDateCalendar-root button:active svg, .MuiDateCalendar-root button:active svg *, .MuiDateCalendar-root button:focus-visible svg, .MuiDateCalendar-root button:focus-visible svg * {
+  color: #3a3a3a;
+}
+
+.MuiDateCalendar-root button:focus {
+  background: inherit;
+}
+
+.MuiDateCalendar-root .Mui-selected {
+  background: #177f99 !important;
+  color: #fff !important;
+}
+
+/*# sourceMappingURL=app_components_forms_datePicker_mui_datePicker_b52d8e.css.map*/

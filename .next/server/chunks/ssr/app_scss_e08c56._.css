@@ -1,0 +1,48 @@
+/* [project]/app/scss/_global.scss.css [app-client] (css) */
+/* unparseable [project]/app/scss/_global.scss.css [app-client] (css) */
+
+/* [project]/app/scss/_fonts.scss.css [app-client] (css) */
+@font-face {
+  font-family: Open Sans;
+  font-weight: 300;
+  src: url("/_next/static/media/OpenSans-Light.3292c34c.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 300;
+  font-style: italic;
+  src: url("/_next/static/media/OpenSans-LightItalic.b1de2006.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 400;
+  src: url("/_next/static/media/OpenSans-Regular.b94da2ef.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-style: italic;
+  src: url("/_next/static/media/OpenSans-RegularItalic.d65b1a8a.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 700;
+  src: url("/_next/static/media/OpenSans-Bold.fbbda1da.woff2");
+}
+
+@font-face {
+  font-family: Open Sans;
+  font-weight: 700;
+  font-style: italic;
+  src: url("/_next/static/media/OpenSans-BoldItalic.1667b099.woff2");
+}
+
+
+/* [project]/app/scss/_cssVariables.scss.css [app-client] (css) */
+/* unparseable [project]/app/scss/_cssVariables.scss.css [app-client] (css) */
+
+/*# sourceMappingURL=app_scss_e08c56._.css.map*/

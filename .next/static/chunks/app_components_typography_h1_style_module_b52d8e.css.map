@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/components/typography/h1/style.module.css"],"sourcesContent":[".component_h1{display:block;font-family:\"Nunito Sans\",sans-serif;font-size:30px;font-weight:900;line-height:45px}.component_h1::before{content:\"\";display:table}.component_h1::after{content:\"\";display:table}.component_h1::before{margin-bottom:-11px}.component_h1::after{margin-top:-13px}@media(max-width: 1024px){.component_h1{font-size:26px;line-height:39px}.component_h1::before{margin-bottom:-10px}.component_h1::after{margin-top:-11px}}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAAiH;;;;;AAA+C;;;;;AAA8C;;;;AAA0C;;;;AAAsC;EAA0B;;;;;EAA8C;;;;EAA0C"}},
+    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/app/components/charts/lineChart/style.module.css"],"sourcesContent":[".component_lineChart{position:relative;flex-basis:100%;flex-grow:1;width:100%;height:363px}.component_lineChart .loadingSpinner{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);display:inline-block;box-sizing:border-box;width:40px;height:40px;border:4px solid #aed2db;border-bottom-color:#5ca5b7;border-radius:50%;animation:rotation 1s linear infinite}@keyframes rotation{0%{transform:translate(-50%, -50%) rotate(0deg)}100%{transform:translate(-50%, -50%) rotate(360deg)}}.component_lineChart *{cursor:default !important}.component_lineChart>div>div>div>div{font-weight:700 !important}\n"],"names":[],"mappings":"AAAA;;;;;;;;AAA2F;;;;;;;;;;;;;;;AAAuR;;;;;;;;;;AAAyH;;;;AAAiD"}},
+    {"offset": {"line": 41, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -1,0 +1,512 @@
+/* [project]/app/components/testThing/style.module.css [app-client] (css) */
+.style-module__a95hvG__component_testThing {
+  all: initial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: color .2s linear, background .2s linear, border-color .2s linear;
+}
+
+.style-module__a95hvG__component_testThing > div.style-module__a95hvG__text {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__icon_only {
+  position: relative !important;
+  padding: 0 !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__icon_only .style-module__a95hvG__icon {
+  top: 50% !important;
+  right: auto !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__icon_only > .style-module__a95hvG__text {
+  position: static !important;
+  width: 0 !important;
+  padding: 0 !important;
+}
+
+.style-module__a95hvG__component_testThing .style-module__a95hvG__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.style-module__a95hvG__component_testThing .style-module__a95hvG__icon svg {
+  transition: color .2s linear;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__icon_left .style-module__a95hvG__icon {
+  left: 0;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__icon_right .style-module__a95hvG__icon {
+  right: 0;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary {
+  background: #f99b27;
+  color: #181818;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary .style-module__a95hvG__icon svg {
+  color: #181818;
+}
+
+@media (hover: hover) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:hover {
+    background: #000;
+    color: #f99b27;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:hover .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:hover .style-module__a95hvG__icon svg {
+    color: #f99b27;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:active, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:focus-visible {
+  background: #000;
+  color: #f99b27;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:active .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:active .style-module__a95hvG__icon svg, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:focus-visible .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_primary:focus-visible .style-module__a95hvG__icon svg {
+  color: #f99b27;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_secondary {
+  background: #feebd4;
+  color: #181818;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_secondary .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_secondary .style-module__a95hvG__icon svg {
+  color: #181818;
+}
+
+@media (hover: hover) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_secondary:hover {
+    background: #f99b27;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_secondary:active, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_secondary:focus-visible {
+  background: #f99b27;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline {
+  background: none;
+  border: 2px solid #f99b27;
+  color: #f99b27;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline .style-module__a95hvG__icon svg {
+  color: #f99b27;
+}
+
+@media (hover: hover) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:hover {
+    background: #f99b27;
+    border-color: #f99b27;
+    color: #181818;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:hover .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:hover .style-module__a95hvG__icon svg {
+    color: #181818;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:active, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:focus-visible {
+  background: #f99b27;
+  border-color: #f99b27;
+  color: #181818;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:active .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:active .style-module__a95hvG__icon svg, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:focus-visible .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline:focus-visible .style-module__a95hvG__icon svg {
+  color: #181818;
+}
+
+.style-module__a95hvG__component_testThing[disabled] {
+  background: #d1d1d1;
+  pointer-events: none;
+}
+
+.style-module__a95hvG__component_testThing[disabled] > .style-module__a95hvG__text {
+  color: #181818;
+}
+
+.style-module__a95hvG__component_testThing[disabled] .style-module__a95hvG__icon, .style-module__a95hvG__component_testThing[disabled] .style-module__a95hvG__icon svg {
+  color: #181818;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_l {
+  padding-top: 16px;
+  padding-right: 64px;
+  padding-bottom: 16px;
+  padding-left: 64px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_l .style-module__a95hvG__icon {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_l.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 40px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_l.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 40px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_l.style-module__a95hvG__icon_only {
+  width: 74px;
+  height: 46px;
+}
+
+@media (width <= 1024px) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_l {
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_l .style-module__a95hvG__icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_l.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+    padding-left: 32px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_l.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+    padding-right: 32px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_l.style-module__a95hvG__icon_only {
+    width: 69px;
+    height: 45px;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_m {
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_m .style-module__a95hvG__icon {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_m.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 32px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_m.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 32px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_m.style-module__a95hvG__icon_only {
+  width: 69px;
+  height: 45px;
+}
+
+@media (width <= 1024px) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_m {
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_m .style-module__a95hvG__icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_m.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+    padding-left: 28px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_m.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+    padding-right: 28px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_m.style-module__a95hvG__icon_only {
+    width: 55px;
+    height: 35px;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_s {
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_s .style-module__a95hvG__icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_s.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 28px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_s.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 28px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_s.style-module__a95hvG__icon_only {
+  width: 55px;
+  height: 35px;
+}
+
+@media (width <= 1024px) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_s {
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_s .style-module__a95hvG__icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_s.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+    padding-left: 24px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_s.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+    padding-right: 24px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__size_s.style-module__a95hvG__icon_only {
+    width: 42px;
+    height: 26px;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_xs {
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_xs .style-module__a95hvG__icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_xs.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 24px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_xs.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 24px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__size_xs.style-module__a95hvG__icon_only {
+  width: 42px;
+  height: 26px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l {
+  padding-top: 14px;
+  padding-right: 62px;
+  padding-bottom: 14px;
+  padding-left: 62px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l .style-module__a95hvG__icon {
+  width: 28px !important;
+  height: 28px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 40px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 40px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l.style-module__a95hvG__icon_only {
+  width: 74px;
+  height: 46px;
+}
+
+@media (width <= 1024px) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l {
+    padding-top: 14px;
+    padding-right: 30px;
+    padding-bottom: 14px;
+    padding-left: 30px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l .style-module__a95hvG__icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+    padding-left: 32px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+    padding-right: 32px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_l.style-module__a95hvG__icon_only {
+    width: 69px;
+    height: 45px;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m {
+  padding-top: 14px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m .style-module__a95hvG__icon {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 32px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 32px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m.style-module__a95hvG__icon_only {
+  width: 69px;
+  height: 45px;
+}
+
+@media (width <= 1024px) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m {
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m .style-module__a95hvG__icon {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+    padding-left: 28px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+    padding-right: 28px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_m.style-module__a95hvG__icon_only {
+    width: 55px;
+    height: 35px;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s {
+  padding-top: 10px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s .style-module__a95hvG__icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 28px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 28px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s.style-module__a95hvG__icon_only {
+  width: 55px;
+  height: 35px;
+}
+
+@media (width <= 1024px) {
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s {
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    padding-left: 14px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s .style-module__a95hvG__icon {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+    padding-left: 24px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+    padding-right: 24px;
+  }
+
+  .style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_s.style-module__a95hvG__icon_only {
+    width: 42px;
+    height: 26px;
+  }
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_xs {
+  padding-top: 6px;
+  padding-right: 14px;
+  padding-bottom: 6px;
+  padding-left: 14px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_xs .style-module__a95hvG__icon {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_xs.style-module__a95hvG__icon_left > .style-module__a95hvG__text {
+  padding-left: 24px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_xs.style-module__a95hvG__icon_right > .style-module__a95hvG__text {
+  padding-right: 24px;
+}
+
+.style-module__a95hvG__component_testThing.style-module__a95hvG__type_outline.style-module__a95hvG__size_xs.style-module__a95hvG__icon_only {
+  width: 42px;
+  height: 26px;
+}
+
+/*# sourceMappingURL=app_components_testThing_style_module_b52d8e.css.map*/
