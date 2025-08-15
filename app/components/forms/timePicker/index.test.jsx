@@ -5,7 +5,7 @@ import TimePicker from './index.tsx';
 describe('TimePicker', () => {
 	it('renders', () => {
 		const { container } = render(<TimePicker />);
-		expect(container.querySelector('.component_input')).toBeTruthy();
+		expect(container.querySelector('.component_timePicker')).toBeTruthy();
 	});
 
 	it('id prop is applied', () => {
@@ -20,7 +20,7 @@ describe('TimePicker', () => {
 
 	it('name prop is applied', () => {
 		const { container } = render(<TimePicker name='test_name' />);
-		expect(container.querySelector('.component_input input[name="test_name"]')).toBeTruthy();
+		expect(container.querySelector('.component_timePicker input[name="test_name"]')).toBeTruthy();
 	});
 
 	it('error prop is applied', () => {
