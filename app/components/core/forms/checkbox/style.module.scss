@@ -1,0 +1,159 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../../../scss/partials/variables' as v;
+@use '../../../../scss/partials/mixins' as m;
+
+
+
+/* Checkbox Component
+---------------------------------------------------------------------------------------------------- */
+.component_checkbox {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	transition: opacity v.$transition_fast linear;
+
+
+	/* Checkbox
+	-------------------------------------------------- */
+	.checkboxContainer {
+		position: relative;
+		width: v.$gap_3_5;
+		min-width: v.$gap_3_5;
+		height: v.$gap_3_5;
+		min-height: v.$gap_3_5;
+
+		input {
+			@include m.reset;
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: v.$color_white;
+			border: 1px solid v.$color_grey_light_1;
+			border-radius: v.$border_radius_xs;
+			cursor: pointer;
+			transition: background-color v.$transition_fast ease, border-color v.$transition_fast ease;
+
+			&:focus-visible {
+				outline: 3px solid v.$color_secondary;
+			}
+		}
+
+		.icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			font-size: 0;
+			pointer-events: none;
+			transition: opacity v.$transition_fast ease;
+
+			svg {
+				width: 17px;
+				height: 12px;
+				color: v.$color_secondary;
+				transition: color v.$transition_fast ease;
+			}
+		}
+	}
+
+
+	/* Label
+	-------------------------------------------------- */
+	.textContainer {
+		display: flex;
+
+		label {
+			padding-top: v.$gap_1;
+			padding-left: v.$gap_1;
+			color: v.$color_grey_dark_2;
+			cursor: pointer;
+			user-select: none;
+		}
+	}
+
+
+	/* Error state (does not apply when disabled)
+	-------------------------------------------------- */
+	&.error:not(.disabled) {
+		.checkboxContainer {
+			input {
+				border-color: v.$color_error;
+			}
+
+			&[data-selected='true'] {
+				input {
+					background: v.$color_error;
+				}
+			}
+		}
+
+		.textContainer {
+			label {
+				color: v.$color_error;
+			}
+		}
+	}
+
+
+	/* Disabled state
+	-------------------------------------------------- */
+	&.disabled {
+		opacity: .5;
+		pointer-events: none;
+
+		.checkboxContainer[data-selected='true'] {
+			input {
+				background: v.$color_grey_light_1;
+				border-color: v.$color_grey_light_1;
+			}
+		}
+	}
+
+
+	/* Selected state
+	-------------------------------------------------- */
+	.checkboxContainer {
+		&[data-selected='true'] {
+			input {
+				background: v.$color_primary;
+				border-color: v.$color_primary;
+			}
+
+			.icon {
+				opacity: 1;
+
+				svg {
+					color: v.$color_white;
+				}
+			}
+		}
+	}
+
+
+	/* Responsive
+	-------------------------------------------------- */
+	@media (max-width: v.$breakpoint_l) {
+		.checkboxContainer {
+			width: v.$gap_2_5;
+			min-width: v.$gap_2_5;
+			height: v.$gap_2_5;
+			min-height: v.$gap_2_5;
+
+			.icon {
+				svg {
+					width: 14px;
+					height: 10px;
+				}
+			}
+		}
+
+		.textContainer {
+			label {
+				padding-top: 5px;
+			}
+		}
+	}
+}

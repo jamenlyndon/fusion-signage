@@ -1,0 +1,63 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../../scss/partials/variables' as v;
+@use '../../../scss/partials/mixins' as m;
+
+
+
+/* Snackbar Component
+---------------------------------------------------------------------------------------------------- */
+.component_snackbar {
+	position: fixed;
+	right: v.$gap_5;
+	bottom: v.$gap_3;
+	left: v.$gap_5;
+	display: flex;
+	justify-content: center;
+	min-width: 320px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity v.$transition_fast linear, bottom v.$transition_medium ease-in-out;
+
+	.inner {
+		padding-top: v.$gap_2_5;
+		padding-right: v.$gap_4;
+		padding-bottom: v.$gap_2_5;
+		padding-left: v.$gap_4;
+		background: v.$color_grey_dark_2;
+		border-radius: v.$border_radius_xs;
+		box-shadow: v.$shadow_s;
+
+		.text {
+			color: v.$color_white;
+			text-align: center;
+		}
+	}
+
+
+	/* Visible state
+	-------------------------------------------------- */
+	&[data-visible='true'] {
+		bottom: v.$gap_4;
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+
+	/* Responsive
+	-------------------------------------------------- */
+	@media (max-width: v.$breakpoint_l) {
+		right: v.$gap_4;
+		left: v.$gap_4;
+	}
+
+	@media (max-width: v.$breakpoint_m) {
+		right: v.$gap_3;
+		bottom: v.$gap_2;
+		left: v.$gap_3;
+
+		&[data-visible='true'] {
+			bottom: v.$gap_3;
+		}
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"name": "Fusion Signage",
+	"version": "1.0.0",
+	"description": "",
+	"license": "ISC",
+	"author": "Jamen Lyndon",
+	"entry": "index.ts",
+	"scripts": {
+		"TEST-COMMENT": "pnpm run test : This runs the AUTOMATED TESTS",
+		"test": "cross-env NODE_ENV=test NODE_NO_WARNINGS=1 jest",
+		"LINTING-COMMENT": "pnpm run lint : This runs LINTING with automatic fixing enabled (use this if you want to run linting in terminal, but recommended you instead do this in your IDE directly)",
+		"lint": "stylelint \"**/*.scss\" --fix && next lint --fix",
+		"WATCH-COMMENT": "pnpm run watch : This runs the WATCH for development, checking for Typescript errors in real time",
+		"watch": "concurrently \"npx tsc --noEmit --watch\" \"next dev --turbopack\"",
+		"START-COMMENT": "pnpm run start : START the server",
+		"start": "next dev --turbopack",
+		"BUILD-COMMENT": "pnpm run build : This runs the BUILD for deployment",
+		"build": "pnpm run lint && pnpm run test && next build"
+	},
+	"dependencies": {
+		"next": "^15.4.6",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@stylistic/eslint-plugin": "^2.13.0",
+		"@testing-library/dom": "^10.4.1",
+		"@testing-library/jest-dom": "^6.7.0",
+		"@testing-library/react": "^16.3.0",
+		"@testing-library/user-event": "^14.6.1",
+		"@types/node": "^20.19.11",
+		"@types/react": "^18.3.23",
+		"@types/react-dom": "^18.3.7",
+		"concurrently": "^9.2.0",
+		"cross-env": "^7.0.3",
+		"eslint": "^8.57.1",
+		"eslint-config-next": "15.0.3",
+		"jest": "^29.7.0",
+		"jest-environment-jsdom": "^29.7.0",
+		"jest-fixed-jsdom": "^0.0.9",
+		"postcss": "^8.5.6",
+		"postcss-sass": "^0.5.0",
+		"postcss-scss": "^4.0.9",
+		"sass": "^1.90.0",
+		"stylelint": "^16.23.1",
+		"stylelint-order": "^6.0.4",
+		"stylelint-scss": "^6.12.1",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.9.2"
+	}
+}

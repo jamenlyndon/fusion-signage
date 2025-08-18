@@ -1,0 +1,198 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../../../scss/partials/variables' as v;
+@use '../typography' as t;
+@use 'sass:math';
+
+
+
+/* Size mixins
+---------------------------------------------------------------------------------------------------- */
+/* Large
+-------------------------------------------------- */
+@mixin size_l($bold: false) {
+	font-size: 20px;
+	// This fixes a subpixel rendering issue - line height is "font size" x "1.2" (120%)
+	line-height: #{math.floor(20 * 1.2)}px;
+
+	@if ($bold) {
+		font-weight: v.$font_weight_extraBold;
+	}
+	@else {
+		font-weight: v.$font_weight_regular;
+	}
+
+	&::before {
+		margin-bottom: -4px;
+	}
+
+	&::after {
+		margin-top: -6px;
+	}
+}
+
+
+/* Medium
+-------------------------------------------------- */
+@mixin size_m($bold: false) {
+	font-size: 17px;
+	// This fixes a subpixel rendering issue - line height is "font size" x "1.2" (120%)
+	line-height: #{math.floor(17 * 1.2)}px;
+
+	@if ($bold) {
+		font-weight: v.$font_weight_bold;
+	}
+	@else {
+		font-weight: v.$font_weight_regular;
+	}
+
+	&::before {
+		margin-bottom: -3px;
+	}
+
+	&::after {
+		margin-top: -5px;
+	}
+}
+
+
+/* Small
+-------------------------------------------------- */
+@mixin size_s($bold: false) {
+	font-size: 14px;
+	// This fixes a subpixel rendering issue - line height is "font size" x "1.2" (120%)
+	line-height: #{math.floor(14 * 1.2)}px;
+
+	@if ($bold) {
+		font-weight: v.$font_weight_bold;
+	}
+	@else {
+		font-weight: v.$font_weight_regular;
+	}
+
+	&::before {
+		margin-bottom: -2px;
+	}
+
+	&::after {
+		margin-top: -4px;
+	}
+}
+
+
+/* Extra small (this is only used as a responsive size of "small")
+-------------------------------------------------- */
+@mixin size_xs($bold: false) {
+	font-size: 12px;
+	// This fixes a subpixel rendering issue - line height is "font size" x "1.2" (120%)
+	line-height: #{math.floor(12 * 1.2)}px;
+
+	@if ($bold) {
+		font-weight: v.$font_weight_semiBold;
+	}
+	@else {
+		font-weight: v.$font_weight_regular;
+	}
+
+	&::before {
+		margin-bottom: -3px;
+	}
+
+	&::after {
+		margin-top: -3px;
+	}
+}
+
+
+
+/* Text Component
+---------------------------------------------------------------------------------------------------- */
+.component_text {
+	@include t.font_base;
+
+
+	/* Sizes
+	---------------------------------------------------------------------------------------------------- */
+	/* Large
+	-------------------------------------------------- */
+	&.size_l {
+		// Bold
+		&.bold {
+			@include size_l(true);
+		}
+
+		// Regular
+		&:not(.bold) {
+			@include size_l(false);
+		}
+
+		// Responsive
+		@media (max-width: v.$breakpoint_l) {
+			// Bold
+			&.bold {
+				@include size_m(true);
+			}
+
+			// Regular
+			&:not(.bold) {
+				@include size_m(false);
+			}
+		}
+	}
+
+
+	/* Medium
+	-------------------------------------------------- */
+	&.size_m {
+		// Bold
+		&.bold {
+			@include size_m(true);
+		}
+
+		// Regular
+		&:not(.bold) {
+			@include size_m(false);
+		}
+
+		// Responsive
+		@media (max-width: v.$breakpoint_l) {
+			// Bold
+			&.bold {
+				@include size_s(true);
+			}
+
+			// Regular
+			&:not(.bold) {
+				@include size_s(false);
+			}
+		}
+	}
+
+
+	/* Small
+	-------------------------------------------------- */
+	&.size_s {
+		// Bold
+		&.bold {
+			@include size_s(true);
+		}
+
+		// Regular
+		&:not(.bold) {
+			@include size_s(false);
+		}
+
+		// Responsive
+		@media (max-width: v.$breakpoint_l) {
+			// Bold
+			&.bold {
+				@include size_xs(true);
+			}
+
+			// Regular
+			&:not(.bold) {
+				@include size_xs(false);
+			}
+		}
+	}
+}

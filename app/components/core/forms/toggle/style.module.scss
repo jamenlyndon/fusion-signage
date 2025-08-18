@@ -1,0 +1,139 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use 'sass:color';
+@use '../../../../scss/partials/variables' as v;
+@use '../../../../scss/partials/mixins' as m;
+
+
+
+/* Toggle Component
+---------------------------------------------------------------------------------------------------- */
+.component_toggle {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	transition: opacity v.$transition_fast linear;
+
+
+	/* Toggle
+	-------------------------------------------------- */
+	input {
+		@include m.reset;
+		position: relative;
+		overflow: hidden;
+		width: v.$gap_7;
+		min-width: v.$gap_7;
+		height: v.$gap_3_5;
+		min-height: v.$gap_3_5;
+		background: v.$color_grey_light_1;
+		border-radius: 9999px;
+		cursor: pointer;
+		transition: background-color v.$transition_medium ease;
+
+		&:focus-visible {
+			outline: 3px solid v.$color_secondary;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			width: 22px;
+			height: 22px;
+			background: v.$color_white;
+			border-radius: 9999px;
+			box-shadow: v.$shadow_s;
+			transition: left v.$transition_medium ease;
+		}
+
+		&:checked {
+			background: v.$color_primary;
+
+			&::before {
+				left: calc(100% - 25px);
+			}
+		}
+	}
+
+
+	/* Label
+	-------------------------------------------------- */
+	.textContainer {
+		display: flex;
+
+		label {
+			padding-top: v.$gap_1;
+			padding-left: v.$gap_1;
+			color: v.$color_grey_dark_2;
+			cursor: pointer;
+			user-select: none;
+		}
+	}
+
+
+	/* Error state (does not apply when disabled)
+	-------------------------------------------------- */
+	&.error:not(.disabled) {
+		input {
+			background: rgba(v.$color_error, .5);
+
+			&:checked {
+				background: v.$color_error;
+			}
+		}
+
+		.textContainer {
+			label {
+				color: v.$color_error;
+			}
+		}
+	}
+
+
+	/* Disabled state
+	-------------------------------------------------- */
+	&.disabled {
+		opacity: .5;
+		pointer-events: none;
+
+		&[data-selected='true'] {
+			input {
+				background: v.$color_grey_dark_1;
+				border-color: v.$color_grey_dark_1;
+			}
+		}
+	}
+
+
+
+	/* Responsive
+	-------------------------------------------------- */
+	@media (max-width: v.$breakpoint_l) {
+		input {
+			width: v.$gap_5;
+			min-width: v.$gap_5;
+			height: v.$gap_2_5;
+			min-height: v.$gap_2_5;
+
+			&::before {
+				top: 3px;
+				left: 3px;
+				width: 14px;
+				height: 14px;
+			}
+
+			&:checked {
+				&::before {
+					left: calc(100% - 17px);
+				}
+			}
+		}
+
+		.textContainer {
+			label {
+				padding-top: 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,89 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../../scss/partials/variables' as v;
+@use '../../../scss/partials/mixins' as m;
+
+
+
+/* Button Component
+---------------------------------------------------------------------------------------------------- */
+.component_button {
+	@include m.reset;
+	position: relative;
+	display: inline-block;
+	min-width: (v.$gap_1 * 56);
+	padding-top: v.$gap_2_5;
+	padding-right: v.$gap_4;
+	padding-bottom: v.$gap_2_5;
+	padding-left: v.$gap_4;
+	background: v.$color_primary_dark_1;
+	border-radius: v.$border_radius_xs;
+	color: v.$color_white;
+	text-align: center;
+	cursor: pointer;
+	transition: background v.$transition_fast linear, opacity v.$transition_fast linear;
+
+	// Loading spinner
+	.spinner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: v.$gap_3;
+		height: v.$gap_3;
+		opacity: 0;
+		border: 3px solid v.$color_white;
+		border-bottom-color: transparent;
+		border-radius: 50%;
+		pointer-events: none;
+		transition: opacity v.$transition_fast linear;
+		animation: rotation 1s linear infinite;
+	}
+
+	@keyframes rotation {
+		0% {
+			transform: translate(-50%, -50%) rotate(0deg);
+		}
+
+		100% {
+			transform: translate(-50%, -50%) rotate(360deg);
+		}
+	}
+
+	// Text
+	.text {
+		opacity: 1;
+		transition: opacity v.$transition_fast linear;
+	}
+
+	// Hover state
+	@include m.hover {
+		background: v.$color_primary_dark_2;
+	}
+
+	// Loading state
+	&.loading {
+		opacity: .5;
+		pointer-events: none;
+
+		.spinner {
+			opacity: 1;
+		}
+
+		.text {
+			opacity: 0;
+		}
+	}
+
+	// Responsive
+	@media (max-width: v.$breakpoint_l) {
+		min-width: (v.$gap_1 * 42);
+		padding-top: v.$gap_1_5;
+		padding-right: v.$gap_2;
+		padding-bottom: v.$gap_1_5;
+		padding-left: v.$gap_2;
+	}
+
+	@media (max-width: v.$breakpoint_s) {
+		min-width: 0;
+	}
+}

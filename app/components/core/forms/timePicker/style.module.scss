@@ -1,0 +1,104 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../../../scss/partials/variables' as v;
+@use '../../../../scss/partials/mixins' as m;
+
+
+
+/* Time Picker Component
+---------------------------------------------------------------------------------------------------- */
+.component_timePicker {
+	transition: opacity v.$transition_fast linear;
+
+
+	/* Field
+	-------------------------------------------------- */
+	input {
+		@include m.reset;
+		position: relative;
+		display: flex;
+		width: 100%;
+		height: v.$gap_6;
+		padding-right: v.$gap_4_5;
+		padding-left: v.$gap_2;
+		background: v.$color_white;
+		border: 1px solid v.$color_grey_light_1;
+		border-radius: v.$border_radius_xs;
+		font-family: v.$font_family_primary;
+		font-size: 17px;
+		font-weight: v.$font_weight_regular;
+		line-height: v.$gap_6;
+		color: v.$color_grey_dark_2;
+		white-space: nowrap;
+		transition: border-color v.$transition_fast ease;
+
+		&::placeholder {
+			color: v.$color_grey_light_1;
+		}
+
+		&:focus {
+			// We use !important here, as we want to always override any other border colours (focus is _always_ dark grey)
+			border-color: v.$color_grey_dark_2 !important;
+		}
+
+		// Calendar icon for Webkit
+		&::-webkit-calendar-picker-indicator {
+			position: absolute;
+			top: 50%;
+			right: v.$gap_1;
+			transform: translateY(-50%);
+			filter: invert(7%) sepia(0%) saturate(86%) hue-rotate(220deg) brightness(96%) contrast(86%);
+			cursor: pointer;
+		}
+
+		// There's no calendar icon for Firefox, so reduce the right-hand padding
+		@-moz-document url-prefix() {
+			padding-right: v.$gap_2;
+		}
+	}
+
+
+	/* Error state (does not apply when disabled)
+	-------------------------------------------------- */
+	&.error:not(.disabled) {
+		input {
+			border-color: v.$color_error;
+			color: v.$color_error;
+
+			&::placeholder {
+				color: rgba(v.$color_error, .6);
+			}
+
+			// Calendar icon for WebKit
+			&::-webkit-calendar-picker-indicator {
+				filter: invert(7%) sepia(81%) saturate(6490%) hue-rotate(359deg) brightness(95%) contrast(107%);
+			}
+		}
+	}
+
+
+	/* Disabled state
+	-------------------------------------------------- */
+	&.disabled {
+		opacity: .5;
+		pointer-events: none;
+	}
+
+
+	/* Responsive
+	-------------------------------------------------- */
+	@media (max-width: v.$breakpoint_l) {
+		input {
+			height: v.$gap_5;
+			padding-right: v.$gap_4;
+			padding-left: v.$gap_1_5;
+			font-size: 14px;
+			line-height: v.$gap_5;
+
+			// There's no calendar icon for Firefox, so reduce the right-hand padding
+			@-moz-document url-prefix() {
+				padding-right: v.$gap_1_5;
+			}
+		}
+	}
+}

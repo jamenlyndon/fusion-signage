@@ -1,0 +1,47 @@
+/*
+	How does our typography work?
+	----------------------------------------------------------------------------------------------------
+	We use an innovative system to automatically remove unwanted / unpredictable top and bottom spacing from our typography (which is related to the line height).
+	With this system, all typography automatically aligns to the ascender and baseline of the font.
+	This is hugely beneficial as it allows you to, for example, add 16px of padding to a container element and rest assued that the padding will be exactly 16px from the ascender of the font and baseline of the font.
+	Further reading on measuring fonts: https://www.ucda.com/type-terminology-part-3/
+
+	To use this system, all typography must use the components located in the "components/typography/" directory.
+	For example "<H1>Heading 1</H1>" and "<Text size='l'>Some text</Text>".
+
+	Using this system will likely seem a bit strange at first, but hang in there! You will find it incredibly useful once you get used to it.
+	If you have any questions, please reach out to the wider team.
+*/
+
+
+
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../../scss/partials/variables' as v;
+
+
+
+/* Base typography mixin
+---------------------------------------------------------------------------------------------------- */
+@mixin font_base {
+	/*
+		That's right folks, we're using "display: table" in the below code (sorry!)
+		The reason for this is that it's the simplest way for us to prevent CSS margin collapse.
+
+		This is an issue that occurs when multiple typography components sit next to each other.
+		Their margins would be combined normally and we do not want this (we want them separate).
+		Further reading on CSS margin collapse: https://www.joshwcomeau.com/css/rules-of-margin-collapse/
+	*/
+	display: block;
+	font-family: v.$font_family_primary;
+
+	&::before {
+		content: '';
+		display: table;
+	}
+
+	&::after {
+		content: '';
+		display: table;
+	}
+}

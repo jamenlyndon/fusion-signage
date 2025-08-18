@@ -1,0 +1,399 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../scss/partials/variables' as v;
+@use '../../scss/partials/mixins' as m;
+
+
+
+/* Edit Power Schedule Timers Component
+---------------------------------------------------------------------------------------------------- */
+.component_editPowerScheduleTimers {
+	width: 100%;
+	max-width: (v.$gap_1 * 182);
+	padding: v.$gap_8;
+	background: v.$color_white;
+	border-radius: v.$border_radius_m;
+	box-shadow: v.$shadow_l;
+
+
+	/* Title
+	-------------------------------------------------- */
+	h1 {
+		margin-bottom: v.$gap_4;
+	}
+
+	.divider {
+		width: 100%;
+		height: 1px;
+		margin-bottom: v.$gap_8;
+		background: v.$color_grey_light_2;
+	}
+
+
+	/* Table
+	-------------------------------------------------- */
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		margin-bottom: v.$gap_8;
+		text-align: left;
+
+		// Row gaps
+		tbody {
+			th,
+			td {
+				padding-bottom: v.$gap_2;
+			}
+
+			tr:last-child {
+				th,
+				td {
+					padding-bottom: 0;
+				}
+			}
+		}
+
+		// Column gaps
+		th,
+		td {
+			padding-right: v.$gap_6;
+
+			&:last-child {
+				padding-right: 0;
+			}
+		}
+
+		// Shrink the first and last columns
+		th,
+		td {
+			&:first-child,
+			&:last-child {
+				width: 0;
+			}
+		}
+
+		// Header
+		thead {
+			tr {
+				th {
+					padding-bottom: v.$gap_3;
+					white-space: nowrap;
+				}
+			}
+		}
+
+		// Body
+		tbody {
+			tr {
+				td {
+					vertical-align: top;
+
+					&.enable {
+						padding-top: 11px;
+
+						// Hide toggle label
+						> div > div {
+							display: none;
+						}
+					}
+
+					.label {
+						display: none;
+					}
+
+					.daysContainer {
+						display: flex;
+						gap: v.$gap_3;
+						align-items: center;
+						min-height: v.$gap_6;
+					}
+				}
+			}
+		}
+
+		// Errors
+		.error {
+			display: none;
+			padding-top: v.$gap_1_5;
+			color: v.$color_error;
+
+			&[data-visible='true'][data-disabled='false'] {
+				display: block;
+			}
+		}
+	}
+
+
+	/* Submit button
+	-------------------------------------------------- */
+	.submitButtonContainer {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+
+	/* Responsive
+	-------------------------------------------------- */
+	// Extra extra extra large
+	@media (max-width: v.$breakpoint_xxxl) {
+		padding: v.$gap_6;
+
+
+		/* Title
+		------------------------- */
+		.divider {
+			margin-bottom: v.$gap_6;
+		}
+
+
+		/* Table
+		------------------------- */
+		table {
+			margin-bottom: v.$gap_6;
+
+			// Row gaps
+			tbody {
+				th,
+				td {
+					padding-bottom: v.$gap_2;
+				}
+			}
+
+			// Column gaps
+			th,
+			td {
+				padding-right: v.$gap_4;
+			}
+
+			// Body
+			tbody {
+				tr {
+					td {
+						.daysContainer {
+							gap: v.$gap_2;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	// Extra extra large
+	@media (max-width: v.$breakpoint_xxl) {
+		max-width: (v.$gap_1 * 88);
+		padding: v.$gap_5;
+
+
+		/* Title
+		------------------------- */
+		h1 {
+			margin-bottom: v.$gap_5;
+		}
+
+		.divider {
+			display: none;
+		}
+
+
+		/* Table
+		------------------------- */
+		table {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: v.$gap_5;
+
+			// Remove table header
+			thead {
+				display: none;
+			}
+
+			// Convert table rows to flex
+			tbody {
+				display: contents;
+
+				tr {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: flex-start;
+					width: 100%;
+					margin-bottom: v.$gap_4;
+					padding-bottom: v.$gap_4;
+					border-bottom: 1px solid v.$color_grey_light_2;
+
+					&:first-child {
+						padding-top: v.$gap_4;
+						border-top: 1px solid v.$color_grey_light_2;
+					}
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					// Hide disabled fields
+					&[data-enabled='false'] {
+						td {
+							&.enable {
+								padding-top: 0;
+								padding-bottom: 0;
+							}
+
+							&:not(.enable) {
+								display: none;
+							}
+						}
+					}
+
+					td {
+						display: flex;
+						flex-wrap: wrap;
+
+						// Labels
+						.label {
+							display: flex;
+							width: 100%;
+							padding-bottom: v.$gap_2;
+						}
+
+						// Enable
+						&.enable {
+							width: 100%;
+							padding-top: 0;
+							padding-right: 0;
+							padding-bottom: v.$gap_3;
+							padding-left: 0;
+
+							// Show toggle label
+							> div > div {
+								display: flex;
+							}
+						}
+
+						// Power on and off time
+						&.powerOnTime,
+						&.powerOffTime {
+							width: 50%;
+							padding-right: 0;
+							padding-bottom: v.$gap_3;
+
+							.field {
+								width: 100%;
+							}
+						}
+
+						&.powerOffTime {
+							padding-right: v.$gap_1_5;
+						}
+
+						&.powerOnTime {
+							padding-left: v.$gap_1_5;
+						}
+
+						// Days of week
+						&.daysOfWeek {
+							width: 100%;
+							margin-left: auto;
+							padding-right: 0;
+							padding-bottom: 0;
+
+							.daysContainer {
+								flex-wrap: wrap;
+								row-gap: v.$gap_1_5;
+								column-gap: v.$gap_3;
+								min-height: 0;
+							}
+						}
+					}
+				}
+			}
+
+
+		}
+
+
+		/* Submit button
+		------------------------- */
+		.submitButtonContainer {
+			.submitButton {
+				width: 100%;
+			}
+		}
+	}
+
+
+	// Large
+	@media (max-width: v.$breakpoint_l) {
+		/* Title
+		------------------------- */
+		h1 {
+			margin-bottom: v.$gap_4;
+		}
+
+
+		/* Table
+		------------------------- */
+		table {
+			margin-bottom: v.$gap_4;
+
+			tbody {
+				tr {
+					margin-bottom: v.$gap_3;
+					padding-bottom: v.$gap_3;
+
+					&:first-child {
+						padding-top: v.$gap_3;
+					}
+
+					td {
+						&.enable,
+						&.powerOffTime,
+						&.powerOnTime {
+							padding-bottom: v.$gap_2;
+						}
+
+						.label {
+							padding-bottom: v.$gap_1_5;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	// Medium
+	@media (max-width: v.$breakpoint_m) {
+		padding: v.$gap_4;
+	}
+
+
+	// Extra small
+	@media (max-width: v.$breakpoint_xs) {
+		padding-right: v.$gap_3;
+		padding-left: v.$gap_3;
+	}
+
+
+	// Extra extra small
+	@media (max-width: v.$breakpoint_xxs) {
+		/* Table
+		------------------------- */
+		table {
+			margin-bottom: v.$gap_4;
+
+			tbody {
+				tr {
+					td {
+						&.powerOffTime,
+						&.powerOnTime {
+							width: 100%;
+							padding-right: 0;
+							padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use './variables' as v;
+
+
+
+/* Fonts
+---------------------------------------------------------------------------------------------------- */
+// Nunito Sans
+@font-face {
+	font-family: 'Nunito Sans';
+	font-weight: v.$font_weight_regular v.$font_weight_black;
+	src: url('../../fonts/NunitoSans.woff2');
+}

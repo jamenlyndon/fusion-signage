@@ -1,0 +1,182 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use 'sass:color';
+
+
+
+/* Variables
+---------------------------------------------------------------------------------------------------- */
+/* Colours
+-------------------------------------------------- */
+// Primary (Turquoise)
+$color_primary: #5dc9c9;
+$color_primary_dark_1: #3db6b6;
+$color_primary_dark_2: #39abab;
+
+// Secondary (Light Blue)
+$color_secondary: #c2d5fb;
+
+// Error (Red)
+$color_error: #990100;
+
+// Grey
+$color_grey_light_1: #7c879c;
+$color_grey_light_2: #e5e7eb;
+$color_grey: #4e5767;
+$color_grey_dark_2: #222222;
+$color_grey_dark_1: #373d48;
+
+// White
+$color_white: #ffffff;
+
+
+/* Fonts
+-------------------------------------------------- */
+$font_family_primary: 'Nunito Sans', sans-serif;
+$font_weight_black: 900;
+$font_weight_extraBold: 800;
+$font_weight_bold: 700;
+$font_weight_semiBold: 600;
+$font_weight_regular: 400;
+
+
+/* Border radius
+-------------------------------------------------- */
+$border_radius_xl: 32px;
+$border_radius_l: 24px;
+$border_radius_m: 16px;
+$border_radius_s: 8px;
+$border_radius_xs: 4px;
+
+
+/* Shadows
+-------------------------------------------------- */
+$shadow_l: 2px 2px 15px rgba(0, 0, 0, 0.05);
+$shadow_s: 1px 1px 2px rgba(0, 0, 0, 0.1);
+
+
+/* Transitions
+-------------------------------------------------- */
+$transition_slow: .4s;
+$transition_medium: .2s;
+$transition_fast: .1s;
+
+
+/* Breakpoints
+-------------------------------------------------- */
+$breakpoint_xxxl: 1360px;
+$breakpoint_xxl: 1280px;
+$breakpoint_xl: 1100px;
+$breakpoint_l: 1024px;
+$breakpoint_m: 768px;
+$breakpoint_s: 640px;
+$breakpoint_xs: 540px;
+$breakpoint_xxs: 400px;
+$breakpoint_xxxs: 355px;
+
+
+/* Gaps
+Why is this code so repetitive?
+Believe it or not there is no (known) way to do this programmatically with SASS.
+-------------------------------------------------- */
+$gap: 8px;
+$gap_half: calc($gap / 2);
+
+$gap_0: 0px;
+$gap_0_5: $gap_half;
+$gap_1: ($gap * 1);
+$gap_1_5: $gap_1 + $gap_half;
+$gap_2: ($gap * 2);
+$gap_2_5: $gap_2 + $gap_half;
+$gap_3: ($gap * 3);
+$gap_3_5: $gap_3 + $gap_half;
+$gap_4: ($gap * 4);
+$gap_4_5: $gap_4 + $gap_half;
+$gap_5: ($gap * 5);
+$gap_5_5: $gap_5 + $gap_half;
+$gap_6: ($gap * 6);
+$gap_6_5: $gap_6 + $gap_half;
+$gap_7: ($gap * 7);
+$gap_7_5: $gap_7 + $gap_half;
+$gap_8: ($gap * 8);
+$gap_8_5: $gap_8 + $gap_half;
+$gap_9: ($gap * 9);
+$gap_9_5: $gap_9 + $gap_half;
+$gap_10: ($gap * 10);
+$gap_10_5: $gap_10 + $gap_half;
+$gap_11: ($gap * 11);
+$gap_11_5: $gap_11 + $gap_half;
+$gap_12: ($gap * 12);
+$gap_12_5: $gap_12 + $gap_half;
+$gap_13: ($gap * 13);
+$gap_13_5: $gap_13 + $gap_half;
+$gap_14: ($gap * 14);
+$gap_14_5: $gap_14 + $gap_half;
+$gap_15: ($gap * 15);
+$gap_15_5: $gap_15 + $gap_half;
+$gap_16: ($gap * 16);
+$gap_16_5: $gap_16 + $gap_half;
+$gap_17: ($gap * 17);
+$gap_17_5: $gap_17 + $gap_half;
+$gap_18: ($gap * 18);
+$gap_18_5: $gap_18 + $gap_half;
+$gap_19: ($gap * 19);
+$gap_19_5: $gap_19 + $gap_half;
+$gap_20: ($gap * 20);
+$gap_20_5: $gap_20 + $gap_half;
+$gap_21: ($gap * 21);
+$gap_21_5: $gap_21 + $gap_half;
+$gap_22: ($gap * 22);
+$gap_22_5: $gap_22 + $gap_half;
+$gap_23: ($gap * 23);
+$gap_23_5: $gap_23 + $gap_half;
+$gap_24: ($gap * 24);
+$gap_24_5: $gap_24 + $gap_half;
+$gap_25: ($gap * 25);
+$gap_25_5: $gap_25 + $gap_half;
+$gap_26: ($gap * 26);
+$gap_26_5: $gap_26 + $gap_half;
+$gap_27: ($gap * 27);
+$gap_27_5: $gap_27 + $gap_half;
+$gap_28: ($gap * 28);
+$gap_28_5: $gap_28 + $gap_half;
+$gap_29: ($gap * 29);
+$gap_29_5: $gap_29 + $gap_half;
+$gap_30: ($gap * 30);
+$gap_30_5: $gap_30 + $gap_half;
+$gap_31: ($gap * 31);
+$gap_31_5: $gap_31 + $gap_half;
+$gap_32: ($gap * 32);
+$gap_32_5: $gap_32 + $gap_half;
+$gap_33: ($gap * 33);
+$gap_33_5: $gap_33 + $gap_half;
+$gap_34: ($gap * 34);
+$gap_34_5: $gap_34 + $gap_half;
+$gap_35: ($gap * 35);
+$gap_35_5: $gap_35 + $gap_half;
+$gap_36: ($gap * 36);
+$gap_36_5: $gap_36 + $gap_half;
+$gap_37: ($gap * 37);
+$gap_37_5: $gap_37 + $gap_half;
+$gap_38: ($gap * 38);
+$gap_38_5: $gap_38 + $gap_half;
+$gap_39: ($gap * 39);
+$gap_39_5: $gap_39 + $gap_half;
+$gap_40: ($gap * 40);
+$gap_40_5: $gap_40 + $gap_half;
+$gap_41: ($gap * 41);
+$gap_41_5: $gap_41 + $gap_half;
+$gap_42: ($gap * 42);
+$gap_42_5: $gap_42 + $gap_half;
+$gap_43: ($gap * 43);
+$gap_43_5: $gap_43 + $gap_half;
+$gap_44: ($gap * 44);
+$gap_44_5: $gap_44 + $gap_half;
+$gap_45: ($gap * 45);
+$gap_45_5: $gap_45 + $gap_half;
+$gap_46: ($gap * 46);
+$gap_46_5: $gap_46 + $gap_half;
+$gap_47: ($gap * 47);
+$gap_47_5: $gap_47 + $gap_half;
+$gap_48: ($gap * 48);
+$gap_48_5: $gap_48 + $gap_half;

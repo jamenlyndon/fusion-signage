@@ -1,0 +1,51 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use '../../../../scss/partials/variables' as v;
+@use '../typography' as t;
+@use 'sass:math';
+
+
+
+/* H1 Component
+---------------------------------------------------------------------------------------------------- */
+/* Mixin
+-------------------------------------------------- */
+@mixin h1() {
+	@include t.font_base;
+	font-size: 30px;
+	font-weight: v.$font_weight_black;
+
+	// This fixes a subpixel rendering issue - line height is "font size" x "1.5" (150%)
+	line-height: #{math.floor(30 * 1.5)}px;
+
+	&::before {
+		margin-bottom: -11px;
+	}
+
+	&::after {
+		margin-top: -13px;
+	}
+}
+
+
+/* Component
+-------------------------------------------------- */
+.component_h1 {
+	@include h1;
+
+	// Responsive
+	@media (max-width: v.$breakpoint_l) {
+		font-size: 26px;
+
+		// This fixes a subpixel rendering issue - line height is "font size" x "1.5" (150%)
+		line-height: #{math.floor(26 * 1.5)}px;
+
+		&::before {
+			margin-bottom: -10px;
+		}
+
+		&::after {
+			margin-top: -11px;
+		}
+	}
+}

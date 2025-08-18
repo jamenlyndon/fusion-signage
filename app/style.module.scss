@@ -1,0 +1,25 @@
+/* Imports
+---------------------------------------------------------------------------------------------------- */
+@use 'scss/partials/variables' as v;
+@use 'scss/partials/mixins' as m;
+
+
+
+/* Demo Page
+---------------------------------------------------------------------------------------------------- */
+.page_demo {
+	display: flex;
+	justify-content: center;
+	padding: v.$gap_4;
+
+
+	/* Responsive
+	-------------------------------------------------- */
+	@media (max-width: v.$breakpoint_l) {
+		padding: v.$gap_3;
+	}
+
+	@media (max-width: v.$breakpoint_m) {
+		padding: v.$gap_2;
+	}
+}
