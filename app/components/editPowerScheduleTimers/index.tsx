@@ -132,7 +132,6 @@ function EditPowerScheduleTimers({
 	/* Create the errors state
 	-------------------------------------------------- */
 	type typedErrors = {
-		hasError: boolean,
 		powerOffTime: boolean,
 		powerOnTime: boolean,
 		daysOfWeek: boolean
@@ -140,43 +139,36 @@ function EditPowerScheduleTimers({
 
 	const [errorsState, setErrorsState] = React.useState([
 		{
-			hasError: false,
 			powerOffTime: false,
 			powerOnTime: false,
 			daysOfWeek: false
 		},
 		{
-			hasError: false,
 			powerOffTime: false,
 			powerOnTime: false,
 			daysOfWeek: false
 		},
 		{
-			hasError: false,
 			powerOffTime: false,
 			powerOnTime: false,
 			daysOfWeek: false
 		},
 		{
-			hasError: false,
 			powerOffTime: false,
 			powerOnTime: false,
 			daysOfWeek: false
 		},
 		{
-			hasError: false,
 			powerOffTime: false,
 			powerOnTime: false,
 			daysOfWeek: false
 		},
 		{
-			hasError: false,
 			powerOffTime: false,
 			powerOnTime: false,
 			daysOfWeek: false
 		},
 		{
-			hasError: false,
 			powerOffTime: false,
 			powerOnTime: false,
 			daysOfWeek: false
@@ -210,7 +202,7 @@ function EditPowerScheduleTimers({
 
 	/* Update a timer (triggered when any field within the form changes)
 	-------------------------------------------------- */
-	function updateTimer(event: React.ChangeEvent<HTMLInputElement>, timerIndex: number, type: 'enabled' | 'powerOnTime' | 'powerOffTime' | 'daysOfWeek') {
+	function updateTimer(event: React.ChangeEvent<HTMLInputElement>, timerIndex: number, field: 'enabled' | 'powerOnTime' | 'powerOffTime' | 'daysOfWeek') {
 		/* Clone the timers state (this forces React to re-render the component)
 		------------------------- */
 		const updatedState = [...timersState];
@@ -219,22 +211,22 @@ function EditPowerScheduleTimers({
 		/* Update fields
 		------------------------- */
 		// Enabled
-		if (type === 'enabled') {
+		if (field === 'enabled') {
 			updatedState[timerIndex].enabled = !updatedState[timerIndex].enabled;
 		}
 
 		// Power off time
-		else if (type === 'powerOffTime') {
+		else if (field === 'powerOffTime') {
 			updatedState[timerIndex].powerOffTime = event.currentTarget.value;
 		}
 
 		// Power on time
-		else if (type === 'powerOnTime') {
+		else if (field === 'powerOnTime') {
 			updatedState[timerIndex].powerOnTime = event.currentTarget.value;
 		}
 
 		// Days of week
-		else if (type === 'daysOfWeek') {
+		else if (field === 'daysOfWeek') {
 			const fieldValue = event.currentTarget.value;
 
 			// If it's not checked
@@ -257,7 +249,7 @@ function EditPowerScheduleTimers({
 
 		/* Validate the form (this removes errors in real time)
 		------------------------- */
-		validateForm(timerIndex, type);
+		validateForm(timerIndex, field);
 	}
 
 
@@ -265,10 +257,10 @@ function EditPowerScheduleTimers({
 	-------------------------------------------------- */
 	/*
 		Please note:
-		- When you submit the form using the save button, "timerIndex" and "type" will be "null".
+		- When you submit the form using the save button, "timerIndex" and "field" will be "null".
 		- When a field changes, it includes real-time validation, "timerIndex" and "type" will be defined.
 	*/
-	function validateForm(timerIndex: number | null = null, type: 'enabled' | 'powerOnTime' | 'powerOffTime' | 'daysOfWeek' | null = null) {
+	function validateForm(timerIndex: number | null = null, field: 'enabled' | 'powerOnTime' | 'powerOffTime' | 'daysOfWeek' | null = null) {
 		/* Clone the errors state (this forces React to re-render the component)
 		------------------------- */
 		const updatedState = [...errorsState];
@@ -281,7 +273,8 @@ function EditPowerScheduleTimers({
 
 		for (let i = 0; i < timersState.length; i++) {
 			// Power off time
-			if ((timerIndex === null && type === null) || (timerIndex === i && type === 'powerOffTime')) {
+			if ((timerIndex === null && field === null) || (timerIndex === i && field === 'powerOffTime')) {
+				// Invalid
 				if (timersState[i].enabled && timersState[i].powerOffTime === '') {
 					updatedState[i].powerOffTime = true;
 					formIsValid = false;
@@ -291,13 +284,15 @@ function EditPowerScheduleTimers({
 						firstError = i;
 					}
 				}
+				// Valid
 				else {
 					updatedState[i].powerOffTime = false;
 				}
 			}
 
 			// Power on time
-			if ((timerIndex === null && type === null) || (timerIndex === i && type === 'powerOnTime')) {
+			if ((timerIndex === null && field === null) || (timerIndex === i && field === 'powerOnTime')) {
+				// Invalid
 				if (timersState[i].enabled && timersState[i].powerOnTime === '') {
 					updatedState[i].powerOnTime = true;
 					formIsValid = false;
@@ -307,13 +302,15 @@ function EditPowerScheduleTimers({
 						firstError = i;
 					}
 				}
+				// Valid
 				else {
 					updatedState[i].powerOnTime = false;
 				}
 			}
 
 			// Active days
-			if ((timerIndex === null && type === null) || (timerIndex === i && type === 'daysOfWeek')) {
+			if ((timerIndex === null && field === null) || (timerIndex === i && field === 'daysOfWeek')) {
+				// Invalid
 				if (timersState[i].enabled && timersState[i].daysOfWeek.length === 0) {
 					updatedState[i].daysOfWeek = true;
 					formIsValid = false;
@@ -323,6 +320,7 @@ function EditPowerScheduleTimers({
 						firstError = i;
 					}
 				}
+				// Valid
 				else {
 					updatedState[i].daysOfWeek = false;
 				}
@@ -338,7 +336,7 @@ function EditPowerScheduleTimers({
 		/* Submit the form
 		------------------------- */
 		// Only if they've pressed the submit button
-		if (timerIndex === null && type === null) {
+		if (timerIndex === null && field === null) {
 			// Form is valid
 			if (formIsValid) {
 				// Set the button to loading state
